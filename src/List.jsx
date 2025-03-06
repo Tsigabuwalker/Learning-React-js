@@ -1,12 +1,15 @@
-function List(){
+function List() {
+    const fruits = ["Apple", "Banana", "Orange", "Pineapple", "Coconut"];
+    fruits.sort();
+    const listItems = fruits.map((fruit, index) => (
+        <li key={index}>{fruit}</li>
+    ));
 
-    const fruits = ["Apple ", " Banana", " Orange", " pinapple", " Coucunt"]
-    const listItems = fruits.map(fruit => (<li>{fruit}</li>))
-    return(
-        <ul>
+    return (
+        <ol>
             {listItems}
-        </ul>
-    )
-    
-} 
-export default List
+        </ol>
+    );
+}
+
+export default List;
