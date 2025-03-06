@@ -1,0 +1,1 @@
+//We will continue with the ternary operator and the ternay operator next

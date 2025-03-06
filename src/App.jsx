@@ -5,6 +5,7 @@ import Card from "./Card.jsx";
 import Button from "./Button.jsx";
 import Students from "./Students.jsx";
 import UserGreeting from "./UserGreeting.jsx";
+import List from "./List.jsx";
 function App() {
   return(
     <div>
@@ -21,6 +22,7 @@ function App() {
 <UserGreeting isLoggedIn={true} username="man_A3" />
 <UserGreeting isLoggedIn={false} username="Batasha_Sn" />
 <UserGreeting isLoggedIn={true} username="Jane Doe" />
+<List />
 
 <Footer />
 
