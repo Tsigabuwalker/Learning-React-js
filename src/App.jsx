@@ -10,6 +10,7 @@ function App() {
   return(
     <div>
 <Header />
+
 <Food />
 <Card />
 <Card />
@@ -22,6 +23,8 @@ function App() {
 <UserGreeting isLoggedIn={true} username="man_A3" />
 <UserGreeting isLoggedIn={false} username="Batasha_Sn" />
 <UserGreeting isLoggedIn={true} username="Jane Doe" />
+
+
 <List />
 
 <Footer />
