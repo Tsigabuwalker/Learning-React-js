@@ -7,6 +7,7 @@ import Students from "./Students.jsx";
 import UserGreeting from "./UserGreeting.jsx";
 import List from "./List.jsx";
 import ProfilePicture from "./ProfilePicture.jsx"; // Capitalized
+import MyComponent from "./MyComponents.jsx";
 
 function App() {
   const fruits = [
@@ -40,9 +41,11 @@ function App() {
       <UserGreeting isLoggedIn={false} username="Batasha_Sn" />
       <UserGreeting isLoggedIn={true} username="Jane Doe" />
       <ProfilePicture /> 
+      <MyComponent />
 
       <List items={fruits} category="fruits" />
       <List items={vegetables} category="vegetables" />
+      
 
       <Footer />
     </div>
