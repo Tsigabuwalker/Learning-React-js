@@ -115,3 +115,23 @@ input {
   font-size:3rem;
   font-weight: bold;
 }
+.color-display{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid hsl(0, 0%, 80px);
+  border-radius: 25px;
+  margin-bottom: 25px;
+  transition: 0.25s ease;
+
+}
+.color-display p{
+  color: hsl(0, 0%, 20%);
+  font-size: 2rem;
+   font-weight: bold;
+   text-align:center;
+
+
+}
