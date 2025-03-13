@@ -10,6 +10,7 @@ import ProfilePicture from "./ProfilePicture.jsx"; // Capitalized
 import MyComponent from "./MyComponents.jsx";
 import Counter from "./Counter.jsx";
 import Comp from "./onChange.jsx";
+import ColorPicker from "./ColorPicker.jsx";
 function App() {
   const fruits = [
     { id: 1, name: "apple", calories: 110 },
@@ -47,6 +48,7 @@ function App() {
       <List items={fruits} category="fruits" />
       <List items={vegetables} category="vegetables" />
     <Comp />
+    <ColorPicker />
       
 <Counter />
       <Footer />
