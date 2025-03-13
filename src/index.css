@@ -95,6 +95,13 @@
   border-radius:5px;
   cursor:pointer;
   background-color:hsl(197, 100%, 48%);
-  
 
+
+}
+input {
+  display: block; /* Make inputs stack vertically */
+  margin-bottom: 10px; /* Space between inputs */
+  padding: 8px; /* Optional: Add padding inside the inputs */
+  width: 100%; /* Optional: Make inputs full width */
+  box-sizing: border-box; /* Ensure padding is included in width */
 }
