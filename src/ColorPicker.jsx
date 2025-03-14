@@ -1,27 +1,43 @@
 import React, { useState } from 'react';
 
-function ColorPicker() {
-    const [color, setColor] = useState('#ffffff');
+function Obj() {
+    const [car, setCar] = useState({
+        year: 2024,
+        model: "Ford",
+        make: "Mustang",
+    });
 
-    function handleColorChange(event) {
-        setColor(event.target.value);
+    function handleYearChange(event) {
+        setCar(prevCar => ({ ...prevCar, year: event.target.value }));
+    }
+
+    function handleModelChange(event) {
+        setCar(prevCar => ({ ...prevCar, model: event.target.value }));
+    }
+
+    function handleMakeChange(event) {
+        setCar(prevCar => ({ ...prevCar, make: event.target.value }));
     }
 
     return (
-        <div className="color-picker-container">
-            <h1 className="ccc">Color Picker</h1>
-            <div className='color-display' style={{ backgroundColor: color }}>
-                <p>Selected Color: {color}</p>
-            </div>
-            <label htmlFor="color-input">Select a Color</label>
-            <input
-                type="color"
-                id="color-input"
-                value={color}
-                onChange={handleColorChange}
+        <div>
+            <input 
+                type="number" 
+                value={car.year} 
+                onChange={handleYearChange} 
+            /><br />
+            <input 
+                type="text" 
+                value={car.make} 
+                onChange={handleMakeChange} 
+            /><br />
+            <input 
+                type="text" 
+                value={car.model} 
+                onChange={handleModelChange} 
             />
         </div>
     );
 }
 
-export default ColorPicker;
+export default Obj;

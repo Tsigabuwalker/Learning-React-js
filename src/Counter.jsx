@@ -1,23 +1,27 @@
 import React, { useState } from 'react';
 
 function Counter() {
-    const [counter, setCounter] = useState(0);
+    const [c, setCounter] = useState(0);
 
     const increment = () => {
-        setCounter(prevCounter => prevCounter + 5); // Use functional update
+        setCounter(c => c + 1); 
+        setCounter(c => c + 1);
+        setCounter(c => c + 1);// Use functional update
     };
 
     const decrement = () => {
-        setCounter(prevCounter => prevCounter - 5); // Use functional update
+        setCounter(c => c - 1); 
+        setCounter(c => c - 1);
+        setCounter(c => c - 1);// Use functional update
     };
 
     const reset = () => {
-        setCounter(0);
+        setCounter(c => c = 0);
     };
 
     return (
         <div className="counter-container">
-            <h1 className="count-display">Counter: {counter}</h1>
+            <h1 className="count-display">Counter: {c}</h1>
             <button className="counter-button" onClick={increment}>Increment</button>
             <button className="counter-button" onClick={decrement}>Decrement</button>
             <button className="counter-button" onClick={reset}>Reset</button>

@@ -11,6 +11,7 @@ import MyComponent from "./MyComponents.jsx";
 import Counter from "./Counter.jsx";
 import Comp from "./onChange.jsx";
 import ColorPicker from "./ColorPicker.jsx";
+import Obj from "./Obj.jsx";
 function App() {
   const fruits = [
     { id: 1, name: "apple", calories: 110 },
@@ -49,6 +50,7 @@ function App() {
       <List items={vegetables} category="vegetables" />
     <Comp />
     <ColorPicker />
+    <Obj />
       
 <Counter />
       <Footer />
