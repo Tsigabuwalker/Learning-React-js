@@ -1,7 +1,6 @@
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
 import Food from "./Food.jsx";
-import Card from "./Card.jsx";
 import Button from "./Button.jsx";
 import Students from "./Students.jsx";
 import UserGreeting from "./UserGreeting.jsx";
@@ -12,6 +11,7 @@ import Counter from "./Counter.jsx";
 import Comp from "./onChange.jsx";
 import ColorPicker from "./ColorPicker.jsx";
 import Obj from "./Obj.jsx";
+import Car1 from "./Car1.jsx";
 function App() {
   const fruits = [
     { id: 1, name: "apple", calories: 110 },
@@ -51,6 +51,7 @@ function App() {
     <Comp />
     <ColorPicker />
     <Obj />
+    <Car1 />
       
 <Counter />
       <Footer />
