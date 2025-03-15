@@ -7,6 +7,12 @@ function Car1() {
     const [carModel, setCarModel] = useState("");
 
     function handleAddCar() {
+        const newCar = {
+            year: carYear,
+            make: carMake,
+            model: carModel};
+            setCars(c => [...c, newCar]);
+        
 
     }
         
